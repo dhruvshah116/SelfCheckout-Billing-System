@@ -1,111 +1,1684 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="ind.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
-    
-  </head>
-  <body>
-    <div class="rectangle1">
-      <div class="row">
-        <div class="col-sm-12 col-md-6">
-          <div class="rectangle2">
-            <form id="verifyform" class="group3">
-              <div class="row"><div class="signup">Sign Up</div></div>
-              <div class="row">
-                <input
-                  class="siupip"
-                  type="email"
-                  name=""
-                  id="signupemail"
-                  placeholder="E-mail"
-                />
-              </div>
-              <div class="row">
-                <input
-                  class="siupip"
-                  type="text"
-                  name=""
-                  id="name"
-                  placeholder="Name"
-                />
-              </div>
-              <div class="row">
-                <input
-                  class="siupip"
-                  type="password"
-                  name=""
-                  id="signupassword"
-                  placeholder="password"
-                />
-              </div>
-              <div class="row">
-                <input
-                  class="siupip"
-                  type="password"
-                  name=""
-                  placeholder="Re-enter your password"
-                />
-                <div class="row">
-                  <button type="submit" onClick="saveitem" class="btn-signup">
-                    <div  class="btn-signup-text">Sign me up!</div>
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6">
-          <div class="rectangle9">
-            <form action="" class="group4">
-              <div class="row"><div class="signin">Sign Up</div></div>
-              <div class="row">
-                <input
-                  class="siinip"
-                  type="email"
-                  name=""
-                  id="signupemail"
-                  placeholder="E-mail"
-                />
-              </div>
-              
-              <div class="row">
-                <input
-                  class="siinip"
-                  type="password"
-                  name=""
-                  id="signupemail"
-                  placeholder="password"
-                />
-              </div>
-              <div class="row ">
-                <div class="fpass ">Forget your password?
-                </div>
-              </div>
-                <div class="ro">
-                  <button class="btn-signin"><div class="btn-signup-text">Sign In</div></button>
-                    
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-   <script src="signup.js"></script>
+<!-- saved from url=(0073)https://app.creately.com/player/mobile/src/index.html?playerId=ukwqvaxsn1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Boson</title><!--<base href="/player/mobile/src/">--><base href="."><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="https://app.creately.com/player/mobile/src/favicon.ico"><link rel="stylsheet" href="https://app.creately.com/player/mobile/src/loading.css" ;=""><style>body {
+          padding: 0;
+          margin: 0;
+      }
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
-  </body>
-</html>
+      .bsn-spinner {
+          position: absolute;
+          width: 70px;
+          height: 70px;
+      }
+
+      .bsn-spinner:before {
+          display: block;
+          width: 60px;
+          height: 60px;
+          border-top: 5px solid #e4e4e4;
+          border-right: 5px solid transparent;
+          border-bottom: 5px solid transparent;
+          border-left: 5px solid transparent;
+          border-radius: 50%;
+          -webkit-animation: spin 1s infinite linear;
+          animation: spin 1s infinite linear;
+          content: '';
+      }
+
+      .bsn-icon-bulb, .bsn-spinner {
+          position: absolute;
+          transform: translate(-50%, -50%);
+          left: 50%;
+          top: 50%;
+      }</style><link href="./styles.b302c0f90aeecf9a85c5.bundle.css" rel="stylesheet"><style></style><style>*[_ngcontent-c1]{margin:0;padding:0;border:0}h2[_ngcontent-c1]{font-size:18px}h2[_ngcontent-c1], h3[_ngcontent-c1]{font-weight:400}h3[_ngcontent-c1]{font-size:16px}.fx-center-all[_ngcontent-c1], .mob-sh-panel-container[_ngcontent-c1]   .mob-sh-panel-inner[_ngcontent-c1]{display:-webkit-box;display:-ms-flexbox;display:flex;-moz-justify-content:center;-ms-justify-content:center;-webkit-box-pack:center;justify-content:center;-ms-flex-pack:center;-moz-align-items:center;-ms-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.fx-center-horizontal-without-flex[_ngcontent-c1]{top:0;left:0;right:0;margin:0 auto;position:absolute}.fx-center-vertical[_ngcontent-c1]{display:-webkit-box;display:-ms-flexbox;display:flex;-moz-flex-direction:row;-ms-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;-moz-align-items:center;-ms-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.fx-center-without-flex[_ngcontent-c1]{-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);left:50%;top:50%;position:absolute}.fx-left[_ngcontent-c1]{float:left;text-align:left}.fx-right[_ngcontent-c1]{float:right;text-align:right}.fx-center[_ngcontent-c1]{margin:0 auto;text-align:center}.fx-hidden[_ngcontent-c1]{display:none}.fx-invisible[_ngcontent-c1]{visibility:hidden}.fx-round[_ngcontent-c1]{border-radius:100%}.fx-floating[_ngcontent-c1]{position:absolute;z-index:1}.fx-padding[_ngcontent-c1]{padding:10px}.fx-margin[_ngcontent-c1]{margin:10px}.fx-margin-top-5[_ngcontent-c1]{margin-top:5px}.fx-margin-top-10[_ngcontent-c1]{margin-top:10px}.fx-padding-top-5[_ngcontent-c1]{padding-top:5px}.fx-margin-bottom-5[_ngcontent-c1]{margin-bottom:5px}.fx-margin-bottom-10[_ngcontent-c1]{margin-bottom:10px}.fx-margin-bottom-20[_ngcontent-c1]{margin-bottom:20px}.fx-padding-bottom-5[_ngcontent-c1]{padding-bottom:5px}.fx-padding-bottom-10[_ngcontent-c1]{padding-bottom:10px}.fx-no-padding[_ngcontent-c1]{padding:0}.fx-no-margin[_ngcontent-c1]{margin:0}.fx-no-float[_ngcontent-c1]{float:none}.fx-button.fx-text[_ngcontent-c1], .fx-ellipsis[_ngcontent-c1]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.fx-cover[_ngcontent-c1], .fx-span-both[_ngcontent-c1]{height:100%;width:100%}.fx-span-width[_ngcontent-c1]{width:100%}.fx-span-height[_ngcontent-c1]{height:100%}.fx-cover[_ngcontent-c1]{position:absolute;overflow:hidden}.fx-fix-top[_ngcontent-c1]{top:0}.fx-fix-bottom[_ngcontent-c1]{bottom:0}.fx-fix-right[_ngcontent-c1]{right:0}.fx-fix-left[_ngcontent-c1]{left:0}.fx-fix-top-left[_ngcontent-c1]{top:0;left:0}.fx-fix-top-right[_ngcontent-c1]{top:0;right:0}.fx-overflow-hidden[_ngcontent-c1]{overflow:hidden}button.extra-light-grey[_ngcontent-c1], div.extra-light-grey[_ngcontent-c1]{background-color:#f2f2f2}a.extra-light-grey[_ngcontent-c1], h1.extra-light-grey[_ngcontent-c1], h2.extra-light-grey[_ngcontent-c1], h3.extra-light-grey[_ngcontent-c1], i.extra-light-grey[_ngcontent-c1], label.extra-light-grey[_ngcontent-c1], p.extra-light-grey[_ngcontent-c1], span.extra-light-grey[_ngcontent-c1]{color:#f2f2f2}button.light-grey[_ngcontent-c1], div.light-grey[_ngcontent-c1]{background-color:#e4e4e4}a.light-grey[_ngcontent-c1], h1.light-grey[_ngcontent-c1], h2.light-grey[_ngcontent-c1], h3.light-grey[_ngcontent-c1], i.light-grey[_ngcontent-c1], label.light-grey[_ngcontent-c1], p.light-grey[_ngcontent-c1], span.light-grey[_ngcontent-c1]{color:#e4e4e4}button.medium-grey[_ngcontent-c1], div.medium-grey[_ngcontent-c1]{background-color:#d8d8d8}a.medium-grey[_ngcontent-c1], h1.medium-grey[_ngcontent-c1], h2.medium-grey[_ngcontent-c1], h3.medium-grey[_ngcontent-c1], i.medium-grey[_ngcontent-c1], label.medium-grey[_ngcontent-c1], p.medium-grey[_ngcontent-c1], span.medium-grey[_ngcontent-c1]{color:#d8d8d8}button.grey[_ngcontent-c1], div.grey[_ngcontent-c1]{background-color:#a09f9f}a.grey[_ngcontent-c1], h1.grey[_ngcontent-c1], h2.grey[_ngcontent-c1], h3.grey[_ngcontent-c1], i.grey[_ngcontent-c1], label.grey[_ngcontent-c1], p.grey[_ngcontent-c1], span.grey[_ngcontent-c1]{color:#a09f9f}button.dark-grey[_ngcontent-c1], div.dark-grey[_ngcontent-c1]{background-color:#696969}a.dark-grey[_ngcontent-c1], h1.dark-grey[_ngcontent-c1], h2.dark-grey[_ngcontent-c1], h3.dark-grey[_ngcontent-c1], i.dark-grey[_ngcontent-c1], label.dark-grey[_ngcontent-c1], p.dark-grey[_ngcontent-c1], span.dark-grey[_ngcontent-c1]{color:#696969}button.crimson[_ngcontent-c1], div.crimson[_ngcontent-c1]{background-color:#f05758}a.crimson[_ngcontent-c1], h1.crimson[_ngcontent-c1], h2.crimson[_ngcontent-c1], h3.crimson[_ngcontent-c1], i.crimson[_ngcontent-c1], label.crimson[_ngcontent-c1], p.crimson[_ngcontent-c1], span.crimson[_ngcontent-c1]{color:#f05758}button.black[_ngcontent-c1], div.black[_ngcontent-c1]{background-color:#141414}a.black[_ngcontent-c1], h1.black[_ngcontent-c1], h2.black[_ngcontent-c1], h3.black[_ngcontent-c1], i.black[_ngcontent-c1], label.black[_ngcontent-c1], p.black[_ngcontent-c1], span.black[_ngcontent-c1]{color:#141414}button.yellow[_ngcontent-c1], div.yellow[_ngcontent-c1]{background-color:#faa72d}a.yellow[_ngcontent-c1], h1.yellow[_ngcontent-c1], h2.yellow[_ngcontent-c1], h3.yellow[_ngcontent-c1], i.yellow[_ngcontent-c1], label.yellow[_ngcontent-c1], p.yellow[_ngcontent-c1], span.yellow[_ngcontent-c1]{color:#faa72d}button.light-yellow[_ngcontent-c1], div.light-yellow[_ngcontent-c1]{background-color:#fdc977}a.light-yellow[_ngcontent-c1], h1.light-yellow[_ngcontent-c1], h2.light-yellow[_ngcontent-c1], h3.light-yellow[_ngcontent-c1], i.light-yellow[_ngcontent-c1], label.light-yellow[_ngcontent-c1], p.light-yellow[_ngcontent-c1], span.light-yellow[_ngcontent-c1]{color:#fdc977}button.blue[_ngcontent-c1], div.blue[_ngcontent-c1]{background-color:#1a7bb9}a.blue[_ngcontent-c1], h1.blue[_ngcontent-c1], h2.blue[_ngcontent-c1], h3.blue[_ngcontent-c1], i.blue[_ngcontent-c1], label.blue[_ngcontent-c1], p.blue[_ngcontent-c1], span.blue[_ngcontent-c1]{color:#1a7bb9}button.green[_ngcontent-c1], div.green[_ngcontent-c1]{background-color:#6da067}a.green[_ngcontent-c1], h1.green[_ngcontent-c1], h2.green[_ngcontent-c1], h3.green[_ngcontent-c1], i.green[_ngcontent-c1], label.green[_ngcontent-c1], p.green[_ngcontent-c1], span.green[_ngcontent-c1]{color:#6da067}button.white[_ngcontent-c1], div.white[_ngcontent-c1]{background-color:#fff}a.white[_ngcontent-c1], h1.white[_ngcontent-c1], h2.white[_ngcontent-c1], h3.white[_ngcontent-c1], i.white[_ngcontent-c1], label.white[_ngcontent-c1], p.white[_ngcontent-c1], span.white[_ngcontent-c1]{color:#fff}button.facebook[_ngcontent-c1], div.facebook[_ngcontent-c1]{background-color:#324b7f}a.facebook[_ngcontent-c1], h1.facebook[_ngcontent-c1], h2.facebook[_ngcontent-c1], h3.facebook[_ngcontent-c1], i.facebook[_ngcontent-c1], label.facebook[_ngcontent-c1], p.facebook[_ngcontent-c1], span.facebook[_ngcontent-c1]{color:#324b7f}button.twitter[_ngcontent-c1], div.twitter[_ngcontent-c1]{background-color:#339dc3}a.twitter[_ngcontent-c1], h1.twitter[_ngcontent-c1], h2.twitter[_ngcontent-c1], h3.twitter[_ngcontent-c1], i.twitter[_ngcontent-c1], label.twitter[_ngcontent-c1], p.twitter[_ngcontent-c1], span.twitter[_ngcontent-c1]{color:#339dc3}button.google[_ngcontent-c1], div.google[_ngcontent-c1]{background-color:#dc4535}a.google[_ngcontent-c1], h1.google[_ngcontent-c1], h2.google[_ngcontent-c1], h3.google[_ngcontent-c1], i.google[_ngcontent-c1], label.google[_ngcontent-c1], p.google[_ngcontent-c1], span.google[_ngcontent-c1]{color:#dc4535}button.linkedin[_ngcontent-c1], div.linkedin[_ngcontent-c1]{background-color:#025a84}a.linkedin[_ngcontent-c1], h1.linkedin[_ngcontent-c1], h2.linkedin[_ngcontent-c1], h3.linkedin[_ngcontent-c1], i.linkedin[_ngcontent-c1], label.linkedin[_ngcontent-c1], p.linkedin[_ngcontent-c1], span.linkedin[_ngcontent-c1]{color:#025a84}.fx-button.extra-light-grey[_ngcontent-c1]:hover{background-color:#e5e5e5}.fx-button.extra-light-grey[_ngcontent-c1]:active{background-color:#d9d8d8}.fx-button.fx-outline.extra-light-grey[_ngcontent-c1], .mob-sh-panel-container[_ngcontent-c1]   .fx-button.extra-light-grey[_ngcontent-c1]{border:1px solid #f2f2f2;color:#f2f2f2}.fx-button.fx-outline.extra-light-grey[_ngcontent-c1]:hover, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.extra-light-grey[_ngcontent-c1]:hover{background-color:#f2f2f2;color:#fff}.fx-button.fx-outline.extra-light-grey[_ngcontent-c1]:focus, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.extra-light-grey[_ngcontent-c1]:focus{background-color:transparent;color:#f2f2f2}.fx-button.light-grey[_ngcontent-c1]:hover{background-color:#d7d7d7}.fx-button.light-grey[_ngcontent-c1]:active{background-color:#cbcaca}.fx-button.fx-outline.light-grey[_ngcontent-c1], .mob-sh-panel-container[_ngcontent-c1]   .fx-button.light-grey[_ngcontent-c1]{border:1px solid #e4e4e4;color:#e4e4e4}.fx-button.fx-outline.light-grey[_ngcontent-c1]:hover, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.light-grey[_ngcontent-c1]:hover{background-color:#e4e4e4;color:#fff}.fx-button.fx-outline.light-grey[_ngcontent-c1]:focus, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.light-grey[_ngcontent-c1]:focus{background-color:transparent;color:#e4e4e4}.fx-button.medium-grey[_ngcontent-c1]:hover{background-color:#cbcbcb}.fx-button.medium-grey[_ngcontent-c1]:active{background-color:#bfbebe}.fx-button.fx-outline.medium-grey[_ngcontent-c1], .mob-sh-panel-container[_ngcontent-c1]   .fx-button.medium-grey[_ngcontent-c1]{border:1px solid #d8d8d8;color:#d8d8d8}.fx-button.fx-outline.medium-grey[_ngcontent-c1]:hover, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.medium-grey[_ngcontent-c1]:hover{background-color:#d8d8d8;color:#fff}.fx-button.fx-outline.medium-grey[_ngcontent-c1]:focus, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.medium-grey[_ngcontent-c1]:focus{background-color:transparent;color:#d8d8d8}.fx-button.grey[_ngcontent-c1]:hover{background-color:#939292}.fx-button.grey[_ngcontent-c1]:active{background-color:#878585}.fx-button.fx-outline.grey[_ngcontent-c1], .mob-sh-panel-container[_ngcontent-c1]   .fx-button.grey[_ngcontent-c1]{border:1px solid #a09f9f;color:#a09f9f}.fx-button.fx-outline.grey[_ngcontent-c1]:hover, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.grey[_ngcontent-c1]:hover{background-color:#a09f9f;color:#fff}.fx-button.fx-outline.grey[_ngcontent-c1]:focus, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.grey[_ngcontent-c1]:focus{background-color:transparent;color:#a09f9f}.fx-button.dark-grey[_ngcontent-c1]:hover{background-color:#767676}.fx-button.dark-grey[_ngcontent-c1]:active{background-color:#838282}.fx-button.fx-outline.dark-grey[_ngcontent-c1], .mob-sh-panel-container[_ngcontent-c1]   .fx-button.dark-grey[_ngcontent-c1]{border:1px solid #696969;color:#696969}.fx-button.fx-outline.dark-grey[_ngcontent-c1]:hover, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.dark-grey[_ngcontent-c1]:hover{background-color:#696969;color:#fff}.fx-button.fx-outline.dark-grey[_ngcontent-c1]:focus, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.dark-grey[_ngcontent-c1]:focus{background-color:transparent;color:#696969}.fx-button.crimson[_ngcontent-c1]:hover{background-color:#ee4041}.fx-button.crimson[_ngcontent-c1]:active{background-color:#ec2829}.fx-button.fx-outline.crimson[_ngcontent-c1], .mob-sh-panel-container[_ngcontent-c1]   .fx-button.crimson[_ngcontent-c1]{border:1px solid #f05758;color:#f05758}.fx-button.fx-outline.crimson[_ngcontent-c1]:hover, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.crimson[_ngcontent-c1]:hover{background-color:#f05758;color:#fff}.fx-button.fx-outline.crimson[_ngcontent-c1]:focus, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.crimson[_ngcontent-c1]:focus{background-color:transparent;color:#f05758}.fx-button.black[_ngcontent-c1]:hover{background-color:#212121}.fx-button.black[_ngcontent-c1]:active{background-color:#2e2d2d}.fx-button.fx-outline.black[_ngcontent-c1], .mob-sh-panel-container[_ngcontent-c1]   .fx-button.black[_ngcontent-c1]{border:1px solid #141414;color:#141414}.fx-button.fx-outline.black[_ngcontent-c1]:hover, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.black[_ngcontent-c1]:hover{background-color:#141414;color:#fff}.fx-button.fx-outline.black[_ngcontent-c1]:focus, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.black[_ngcontent-c1]:focus{background-color:transparent;color:#141414}.fx-button.yellow[_ngcontent-c1]:hover{background-color:#f99d14}.fx-button.yellow[_ngcontent-c1]:active{background-color:#ee9006}.fx-button.fx-outline.yellow[_ngcontent-c1], .mob-sh-panel-container[_ngcontent-c1]   .fx-button.yellow[_ngcontent-c1]{border:1px solid #faa72d;color:#faa72d}.fx-button.fx-outline.yellow[_ngcontent-c1]:hover, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.yellow[_ngcontent-c1]:hover{background-color:#faa72d;color:#fff}.fx-button.fx-outline.yellow[_ngcontent-c1]:focus, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.yellow[_ngcontent-c1]:focus{background-color:transparent;color:#faa72d}.fx-button.light-yellow[_ngcontent-c1]:hover{background-color:#fdbf5e}.fx-button.light-yellow[_ngcontent-c1]:active{background-color:#fcb545}.fx-button.fx-outline.light-yellow[_ngcontent-c1], .mob-sh-panel-container[_ngcontent-c1]   .fx-button.light-yellow[_ngcontent-c1]{border:1px solid #fdc977;color:#fdc977}.fx-button.fx-outline.light-yellow[_ngcontent-c1]:hover, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.light-yellow[_ngcontent-c1]:hover{background-color:#fdc977;color:#fff}.fx-button.fx-outline.light-yellow[_ngcontent-c1]:focus, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.light-yellow[_ngcontent-c1]:focus{background-color:transparent;color:#fdc977}.fx-button.blue[_ngcontent-c1]:hover{background-color:#1d8acf}.fx-button.blue[_ngcontent-c1]:active{background-color:#2698e0}.fx-button.fx-outline.blue[_ngcontent-c1], .mob-sh-panel-container[_ngcontent-c1]   .fx-button.blue[_ngcontent-c1]{border:1px solid #1a7bb9;color:#1a7bb9}.fx-button.fx-outline.blue[_ngcontent-c1]:hover, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.blue[_ngcontent-c1]:hover{background-color:#1a7bb9;color:#fff}.fx-button.fx-outline.blue[_ngcontent-c1]:focus, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.blue[_ngcontent-c1]:focus{background-color:transparent;color:#1a7bb9}.fx-button.green[_ngcontent-c1]:hover{background-color:#61925b}.fx-button.green[_ngcontent-c1]:active{background-color:#578252}.fx-button.fx-outline.green[_ngcontent-c1], .mob-sh-panel-container[_ngcontent-c1]   .fx-button.green[_ngcontent-c1]{border:1px solid #6da067;color:#6da067}.fx-button.fx-outline.green[_ngcontent-c1]:hover, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.green[_ngcontent-c1]:hover{background-color:#6da067;color:#fff}.fx-button.fx-outline.green[_ngcontent-c1]:focus, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.green[_ngcontent-c1]:focus{background-color:transparent;color:#6da067}.fx-button.white[_ngcontent-c1]:hover{background-color:#f2f2f2}.fx-button.white[_ngcontent-c1]:active{background-color:#e6e5e5}.fx-button.fx-outline.white[_ngcontent-c1], .mob-sh-panel-container[_ngcontent-c1]   .fx-button.white[_ngcontent-c1]{border:1px solid #fff;color:#fff}.fx-button.fx-outline.white[_ngcontent-c1]:hover, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.white[_ngcontent-c1]:hover{background-color:#fff;color:#fff}.fx-button.fx-outline.white[_ngcontent-c1]:focus, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.white[_ngcontent-c1]:focus{background-color:transparent;color:#fff}.fx-button.facebook[_ngcontent-c1]:hover{background-color:#395691}.fx-button.facebook[_ngcontent-c1]:active{background-color:#4061a4}.fx-button.fx-outline.facebook[_ngcontent-c1], .mob-sh-panel-container[_ngcontent-c1]   .fx-button.facebook[_ngcontent-c1]{border:1px solid #324b7f;color:#324b7f}.fx-button.fx-outline.facebook[_ngcontent-c1]:hover, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.facebook[_ngcontent-c1]:hover{background-color:#324b7f;color:#fff}.fx-button.fx-outline.facebook[_ngcontent-c1]:focus, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.facebook[_ngcontent-c1]:focus{background-color:transparent;color:#324b7f}.fx-button.twitter[_ngcontent-c1]:hover{background-color:#42a9ce}.fx-button.twitter[_ngcontent-c1]:active{background-color:#56b2d3}.fx-button.fx-outline.twitter[_ngcontent-c1], .mob-sh-panel-container[_ngcontent-c1]   .fx-button.twitter[_ngcontent-c1]{border:1px solid #339dc3;color:#339dc3}.fx-button.fx-outline.twitter[_ngcontent-c1]:hover, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.twitter[_ngcontent-c1]:hover{background-color:#339dc3;color:#fff}.fx-button.fx-outline.twitter[_ngcontent-c1]:focus, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.twitter[_ngcontent-c1]:focus{background-color:transparent;color:#339dc3}.fx-button.google[_ngcontent-c1]:hover{background-color:#d33525}.fx-button.google[_ngcontent-c1]:active{background-color:#bd3021}.fx-button.fx-outline.google[_ngcontent-c1], .mob-sh-panel-container[_ngcontent-c1]   .fx-button.google[_ngcontent-c1]{border:1px solid #dc4535;color:#dc4535}.fx-button.fx-outline.google[_ngcontent-c1]:hover, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.google[_ngcontent-c1]:hover{background-color:#dc4535;color:#fff}.fx-button.fx-outline.google[_ngcontent-c1]:focus, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.google[_ngcontent-c1]:focus{background-color:transparent;color:#dc4535}.fx-button.linkedin[_ngcontent-c1]:hover{background-color:#026b9d}.fx-button.linkedin[_ngcontent-c1]:active{background-color:#037cb6}.fx-button.fx-outline.linkedin[_ngcontent-c1], .mob-sh-panel-container[_ngcontent-c1]   .fx-button.linkedin[_ngcontent-c1]{border:1px solid #025a84;color:#025a84}.fx-button.fx-outline.linkedin[_ngcontent-c1]:hover, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.linkedin[_ngcontent-c1]:hover{background-color:#025a84;color:#fff}.fx-button.fx-outline.linkedin[_ngcontent-c1]:focus, .mob-sh-panel-container[_ngcontent-c1]   .fx-button.linkedin[_ngcontent-c1]:focus{background-color:transparent;color:#025a84}.fx-button[_ngcontent-c1]{transition:background-color .5s ease;border:none;text-align:center;padding-left:5px;padding-right:5px;cursor:pointer}.fx-button.fx-block[_ngcontent-c1]{border-radius:5px;display:block}.fx-button.fx-outline[_ngcontent-c1], .mob-sh-panel-container[_ngcontent-c1]   .fx-button[_ngcontent-c1]{background-color:transparent}.fx-button[_ngcontent-c1]:focus{outline:none}.fx-button.fx-icon[_ngcontent-c1]{height:100%;background-color:transparent}.fx-button[_ngcontent-c1]   img[_ngcontent-c1]{border:none}.fx-button.fx-floating[_ngcontent-c1]{top:10px;z-index:100;text-align:center}.fx-button.fx-floating.fx-right[_ngcontent-c1]{right:15px}.fx-button.fx-floating.fx-left[_ngcontent-c1]{left:15px}.fx-button.fx-round[_ngcontent-c1]{width:45px;height:45px}.mob-sh-panel-container[_ngcontent-c1]   .fx-button[_ngcontent-c1]{border-radius:8px;width:100%;height:66px;line-height:66px}.mob-sh-panel-container[_ngcontent-c1]   .mob-sh-panel-inner[_ngcontent-c1]{height:inherit}.mob-sh-panel-container[_ngcontent-c1]   label[_ngcontent-c1], .mob-sh-panel-container[_ngcontent-c1]   p[_ngcontent-c1]{font-size:12px}.mob-sh-panel-container[_ngcontent-c1]   .ss-button-container[_ngcontent-c1]{display:inline-block;width:66px;margin:0 10px 20px 10px}@media only screen and (max-width:360px) and (orientation:portrait){.mob-sh-panel-container[_ngcontent-c1]   .ss-buttons-container[_ngcontent-c1]{width:265px}.mob-sh-panel-container[_ngcontent-c1]   .mob-sh-panel-inner[_ngcontent-c1]{display:block}}@media only screen and (orientation:landscape){.mob-sh-panel-container[_ngcontent-c1]   .ss-buttons-container[_ngcontent-c1]{max-width:265px}.mob-sh-panel-container[_ngcontent-c1]   .mob-sh-panel-inner[_ngcontent-c1]{display:block;margin-top:20px;height:auto}}</style></head><body><app-root _nghost-c0="" ng-version="4.3.6"><div _ngcontent-c0="" class="mob-app-container fx-cover">
+    <!---->
+
+    <view-stack _ngcontent-c0="" buttonicon="boson-icon-back" buttonposition="fx-left"><div></div><mob-diagram-viewer><div class="fx-cover" style="transform: translateX(0); transition: transform 300ms ease-out;">
+    <div class="fx-cover" style="background-color: rgb(255, 255, 255);">
+        <loading-indicator classstring="fx-center-all fx-cover fx-large loading-indicator" spinnerclass="fx-icon boson-icon-bulb"><div class="fx-center-all fx-cover fx-large loading-indicator">
+                    <!----></div></loading-indicator>
+
+        <!---->
+
+        <!----><div class="diagram-area">
+            <!----><svg-view><div class="fx-cover fx-center-all" style="background-color: rgb(255, 255, 255);"><svg version="1.1" x="0" y="0" id="i0k5gxai1" diagram-revision="21" width="2480" height="2405" xmlns="http://www.w3.org/2000/svg" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2480 2405">
+  <g id="Entity-i0k5gxai-ko8" transform="translate(926.2,565)">
+    <desc>root/dfd/entity?version=3&amp;author=Cinergix</desc>
+    <g id="image" transform="scale(1,0.9504950642585754)">
+      <rect vector-effect="non-scaling-stroke" fill="#ffffff" stroke="#000000" width="101" height="101" style="fill:#ffffff;stroke-width:1;stroke:#000000;" stroke-width="1"></rect>
+    </g>
+    <text x="0" y="0" width="65" height="20" transform="translate(18,37)">
+      <tspan x="5.35" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Customer</tspan>
+    </text>
+  </g>
+  <g id="Connector-i0k5gxai-ko10" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1031.2 705 L 1157.5 705 L 1157.5 704.7000000000002 L 1281.2 704.7000000000002 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1281.2,704.7) rotate(90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="74.65" height="18.65" transform="translate(1067.95,693.15)"></rect>
+    <text x="0" y="0" width="78.6" height="22.65" transform="translate(1067.95,693.15)">
+      <tspan x="6.65" y="17.366666316986084" style="font-family:Arial;font-size:12px;fill:#000000;">Grocery Item</tspan>
+    </text>
+  </g>
+  <g id="Entity-i0k5gxai-ko11" transform="translate(1211.2,1490)">
+    <desc>root/dfd/entity?version=3&amp;author=Cinergix</desc>
+    <g id="image">
+      <rect vector-effect="non-scaling-stroke" fill="#ffffff" stroke="#000000" width="101" height="101" style="fill:#ffffff;stroke-width:1;stroke:#000000;" stroke-width="1"></rect>
+    </g>
+    <text x="0" y="0" width="52.35" height="22.65" transform="translate(24.3,39.15)">
+      <tspan x="5.3" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Receipt</tspan>
+    </text>
+  </g>
+  <g id="Process-i0k5gxai-ko14" transform="translate(1276.2,544.7)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="121.00082218647003" height="141.15" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 40 L 121.00082218647003 40 M 1 116.15 L 121.00082218647003 116.15 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85.70891571541627" height="25" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAZCAYAAACrWNlOAAAAH0lEQVR42u3BMQEAAADCoPVPbQsvoAAAAAAAAAAAuBohsQABlpXccwAAAABJRU5ErkJggg==" x="0" y="0" transform="translate(10.05,40)"></image>
+      <image width="85" height="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAUCAYAAAD88XGTAAAAHUlEQVR42u3BMQEAAADCoPVPbQsvoAAAAAAAAOBrGqQAAY/ieY4AAAAASUVORK5CYII=" x="0" y="0" transform="translate(18,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(18,10)">
+      <tspan x="38.65" y="19.99999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">1</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="20" transform="translate(10.05,40)">
+      <tspan x="2.65" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Lookup Item</tspan>
+    </text>
+  </g>
+  <g id="Data Store 2-i0k5gxai-ko15" transform="translate(1526.15,595)">
+    <desc>root/dfd/dataStore2?version=1&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="0" y="0" width="30" height="40" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <rect x="31" y="6" width="171" height="31" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-opacity="0" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 30 5 L 202 5 M 30 36 L 202 36 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+    </g>
+    <text x="0" y="0" width="30" height="20" transform="translate(2,10)">
+      <tspan x="2.7" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">A01</tspan>
+    </text>
+    <text x="0" y="0" width="86.6" height="20" transform="translate(56.7,10)">
+      <tspan x="18.65" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Item Database</tspan>
+    </text>
+  </g>
+  <g id="Connector-i0k5gxai-ko16" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1401.2 704.7000000000002 L 1466.7004110932348 704.7000000000002 L 1466.7004110932348 705 L 1531.1999999999998 705 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1531.15,705) rotate(90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="58.65" height="18.65" transform="translate(1429.05,692.85)"></rect>
+    <text x="0" y="0" width="62.6" height="22.65" transform="translate(1429.05,692.85)">
+      <tspan x="8" y="17.366666316986084" style="font-family:Arial;font-size:12px;fill:#000000;">Item Code</tspan>
+    </text>
+  </g>
+  <g id="Connector-i0k5gxai-ko18" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1631.1999999999998 725 L 1631.1999999999998 825 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1631.15,825) rotate(180)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="101.35" height="18.65" transform="translate(1578.5,756.15)"></rect>
+    <text x="0" y="0" width="105.3" height="22.65" transform="translate(1578.5,756.15)">
+      <tspan x="8" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Item Price Record</tspan>
+    </text>
+  </g>
+  <g id="Process-i0k5gxai-ko25" transform="translate(1566.15,735)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="121" height="141" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 39 L 121 39 M 1 116 L 121 116 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85.70833333333333" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAeCAYAAAC2Xen2AAAAIUlEQVR42u3BgQAAAADDoPlT3+AEVQEAAAAAAAAAAAA8AyhuAAEIgTa0AAAAAElFTkSuQmCC" x="0" y="0" transform="translate(10.05,39)"></image>
+      <image width="85" height="19" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAATCAYAAADh9EErAAAAHUlEQVR42u3BgQAAAADDoPlT3+AEVQEAAAAAAHAMGU8AAdc1oXEAAAAASUVORK5CYII=" x="0" y="0" transform="translate(18,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(18,10)">
+      <tspan x="38.7" y="18.64999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">2</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="36" transform="translate(10.05,39)">
+      <tspan x="2.7" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Calculates</tspan>
+      <tspan x="2.7" y="30.649999713897706" style="font-family:Arial;font-size:12px;fill:#000000;">Total</tspan>
+    </text>
+  </g>
+  <g id="Entity-i0k5gxai-ko26" transform="translate(1576.15,965)">
+    <desc>root/dfd/entity?version=3&amp;author=Cinergix</desc>
+    <g id="image">
+      <rect vector-effect="non-scaling-stroke" fill="#ffffff" stroke="#000000" width="101" height="101" style="fill:#ffffff;stroke-width:1;stroke:#000000;" stroke-width="1"></rect>
+    </g>
+    <text x="0" y="0" width="51" height="20" transform="translate(25,39.5)">
+      <tspan x="4" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Display</tspan>
+    </text>
+  </g>
+  <g id="Connector-i0k5gxai-ko27" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1631.1999999999998 965 L 1631.1999999999998 1055 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1631.15,1055) rotate(180)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="76" height="18.65" transform="translate(1591.15,990.9)"></rect>
+    <text x="0" y="0" width="80" height="22.65" transform="translate(1591.15,990.9)">
+      <tspan x="8" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Grocery Total</tspan>
+    </text>
+  </g>
+  <g id="Process-i0k5gxai-ko28" transform="translate(1091.2,950)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="121" height="141" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 39 L 121 39 M 1 116 L 121 116 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85.70833333333333" height="45" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAtCAYAAAA0s5z1AAAAJklEQVR42u3BMQEAAADCoPVPbQZ/oAAAAAAAAAAAAAAAAAAAAA4DPKUAAQQb2twAAAAASUVORK5CYII=" x="0" y="0" transform="translate(10.05,39)"></image>
+      <image width="85" height="19" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAATCAYAAADh9EErAAAAHUlEQVR42u3BgQAAAADDoPlT3+AEVQEAAAAAAHAMGU8AAdc1oXEAAAAASUVORK5CYII=" x="0" y="0" transform="translate(18,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(18,10)">
+      <tspan x="38.65" y="19.99999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">3</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="52" transform="translate(10.05,39)">
+      <tspan x="2.65" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Asks to</tspan>
+      <tspan x="2.65" y="30.649999713897706" style="font-family:Arial;font-size:12px;fill:#000000;">Repeat or</tspan>
+      <tspan x="2.65" y="46.64999971389771" style="font-family:Arial;font-size:12px;fill:#000000;">CheckOut</tspan>
+    </text>
+  </g>
+  <g id="Connector-i0k5gxai-ko29" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1581.1999999999998 1105 L 1399.1999999999998 1105 L 1399.1999999999998 1110 L 1216.2 1110 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1216.2,1110) rotate(-90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="76" height="18.65" transform="translate(1348.55,1098.15)"></rect>
+    <text x="0" y="0" width="80" height="22.65" transform="translate(1348.55,1098.15)">
+      <tspan x="8" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Grocery Tally</tspan>
+    </text>
+  </g>
+  <g id="Connector-i0k5gxai-ko34" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1156.2 1040 L 1156.2 704.7000000000002 L 1281.2 704.7000000000002 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1281.2,704.7) rotate(90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="80" height="18.65" transform="translate(1114.2,820.7)"></rect>
+    <text x="0" y="0" width="84" height="22.65" transform="translate(1114.2,820.7)">
+      <tspan x="8" y="18.666666316986085" style="font-family:Arial;font-size:12px;fill:#000000;">Repeat Button</tspan>
+    </text>
+  </g>
+  <g id="Process-i0k5gxai-ko35" transform="translate(1196.2,1185)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="121" height="141" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 39 L 121 39 M 1 116 L 121 116 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85.70833333333333" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAA8CAYAAAD8OU3LAAAAK0lEQVR42u3BMQEAAADCoPVPbQdvoAAAAAAAAAAAAAAAAAAAAAAAAAAAfgNQ3AAB2S3BVgAAAABJRU5ErkJggg==" x="0" y="0" transform="translate(10.05,39)"></image>
+      <image width="85" height="19" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAATCAYAAADh9EErAAAAHUlEQVR42u3BgQAAAADDoPlT3+AEVQEAAAAAAHAMGU8AAdc1oXEAAAAASUVORK5CYII=" x="0" y="0" transform="translate(18,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(18,10)">
+      <tspan x="38.65" y="18.69999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">4</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="68" transform="translate(10.05,39)">
+      <tspan x="2.65" y="15.999999713897706" style="font-family:Arial;font-size:12px;fill:#000000;">Asks for</tspan>
+      <tspan x="2.65" y="31.999999713897708" style="font-family:Arial;font-size:12px;fill:#000000;">Coupons</tspan>
+      <tspan x="2.65" y="47.99999971389771" style="font-family:Arial;font-size:12px;fill:#000000;">or go Straight</tspan>
+      <tspan x="2.65" y="63.9999997138977" style="font-family:Arial;font-size:12px;fill:#000000;">to Checkout</tspan>
+    </text>
+  </g>
+  <g id="Connector-i0k5gxai-ko36" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1156.2 1180 L 1156.2 1228 L 1261.2 1228 L 1261.2 1275 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1261.2,1275) rotate(180)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="96" height="18.65" transform="translate(1154.95,1216.15)"></rect>
+    <text x="0" y="0" width="100" height="22.65" transform="translate(1154.95,1216.15)">
+      <tspan x="8" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">CheckOut Button</tspan>
+    </text>
+  </g>
+  <g id="Connector-i0k5gxai-ko38" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1526.2 1250 L 1656.1999999999998 1250 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1656.2,1250) rotate(90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="76" height="18.65" transform="translate(1549.05,1238.15)"></rect>
+    <text x="0" y="0" width="80" height="22.65" transform="translate(1549.05,1238.15)">
+      <tspan x="8" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Coupon Code</tspan>
+    </text>
+  </g>
+  <g id="Data Store 2-i0k5gxai-ko39" transform="translate(1651.2,1140)">
+    <desc>root/dfd/dataStore2?version=1&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="0" y="0" width="30" height="40" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <rect x="31" y="6" width="171" height="31" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-opacity="0" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 30 5 L 202 5 M 30 36 L 202 36 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+    </g>
+    <text x="0" y="0" width="30" height="20" transform="translate(2,10)">
+      <tspan x="2.65" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">A02</tspan>
+    </text>
+    <text x="0" y="0" width="104" height="20" transform="translate(48,10)">
+      <tspan x="10.65" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Coupon Database</tspan>
+    </text>
+  </g>
+  <g id="Process-i0k5gxai-ko40" transform="translate(1691.2,1350)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="121" height="141" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 39 L 121 39 M 1 116 L 121 116 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85.70833333333333" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAeCAYAAAC2Xen2AAAAIUlEQVR42u3BgQAAAADDoPlT3+AEVQEAAAAAAAAAAAA8AyhuAAEIgTa0AAAAAElFTkSuQmCC" x="0" y="0" transform="translate(10.05,39)"></image>
+      <image width="85" height="19" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAATCAYAAADh9EErAAAAHUlEQVR42u3BgQAAAADDoPlT3+AEVQEAAAAAAHAMGU8AAdc1oXEAAAAASUVORK5CYII=" x="0" y="0" transform="translate(18,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(18,10)">
+      <tspan x="38.65" y="19.99999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">5</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="36" transform="translate(10.05,39)">
+      <tspan x="2.65" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Calculates</tspan>
+      <tspan x="2.65" y="30.649999713897706" style="font-family:Arial;font-size:12px;fill:#000000;">Grocery Total</tspan>
+    </text>
+  </g>
+  <g id="Connector-i0k5gxai-ko41" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1756.1999999999998 1270 L 1756.1999999999998 1440 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1756.2,1440) rotate(180)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+  </g>
+  <g id="Connector-i0k5gxai-ko43" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1696.1999999999998 1510 L 1261.2 1510 L 1261.2 1415 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1261.2,1415)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="76" height="18.65" transform="translate(1472.2,1498.15)"></rect>
+    <text x="0" y="0" width="80" height="22.65" transform="translate(1472.2,1498.15)">
+      <tspan x="8" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Grocery Total</tspan>
+    </text>
+  </g>
+  <g id="Process-i0k5gxai-ko44" transform="translate(916.2,1185)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="121" height="141" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 39 L 121 39 M 1 116 L 121 116 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85.70833333333333" height="45" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAtCAYAAAA0s5z1AAAAJklEQVR42u3BMQEAAADCoPVPbQZ/oAAAAAAAAAAAAAAAAAAAAA4DPKUAAQQb2twAAAAASUVORK5CYII=" x="0" y="0" transform="translate(10.05,39)"></image>
+      <image width="85" height="19" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAATCAYAAADh9EErAAAAHUlEQVR42u3BgQAAAADDoPlT3+AEVQEAAAAAAHAMGU8AAdc1oXEAAAAASUVORK5CYII=" x="0" y="0" transform="translate(18,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(18,10)">
+      <tspan x="38.65" y="18.69999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">6</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="52" transform="translate(10.05,39)">
+      <tspan x="2.65" y="15.999999713897706" style="font-family:Arial;font-size:12px;fill:#000000;">Asks for</tspan>
+      <tspan x="2.65" y="31.999999713897708" style="font-family:Arial;font-size:12px;fill:#000000;">Payment</tspan>
+      <tspan x="2.65" y="47.99999971389771" style="font-family:Arial;font-size:12px;fill:#000000;">Method</tspan>
+    </text>
+  </g>
+  <g id="Connector-i0k5gxai-ko45" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1201.2 1345 L 1041.2 1345 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1041.2,1345) rotate(-90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="96" height="18.65" transform="translate(1066.65,1333.15)"></rect>
+    <text x="0" y="0" width="100" height="22.65" transform="translate(1066.65,1333.15)">
+      <tspan x="8" y="17.366666316986084" style="font-family:Arial;font-size:12px;fill:#000000;">CheckOut Button</tspan>
+    </text>
+  </g>
+  <g id="Entity-i0k5gxai-ko46" transform="translate(1421.2,1110)">
+    <desc>root/dfd/entity?version=3&amp;author=Cinergix</desc>
+    <g id="image">
+      <rect vector-effect="non-scaling-stroke" fill="#ffffff" stroke="#000000" width="101" height="101" style="fill:#ffffff;stroke-width:1;stroke:#000000;" stroke-width="1"></rect>
+    </g>
+    <text x="0" y="0" width="54" height="20" transform="translate(23.5,39.5)">
+      <tspan x="5.35" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Coupon</tspan>
+    </text>
+  </g>
+  <g id="Connector-i0k5gxai-ko47" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1321.2 1345 L 1374.2 1345 L 1374.2 1250 L 1426.2 1250 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1426.2,1250) rotate(90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="82.65" height="18.65" transform="translate(1330.85,1306.25)"></rect>
+    <text x="0" y="0" width="86.6" height="22.65" transform="translate(1330.85,1306.25)">
+      <tspan x="8" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Coupon Button</tspan>
+    </text>
+  </g>
+  <g id="Process-i0k5gxai-ko48" transform="translate(916.2,1470)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="121" height="141" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 39 L 121 39 M 1 116 L 121 116 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85.70833333333333" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAeCAYAAAC2Xen2AAAAIUlEQVR42u3BgQAAAADDoPlT3+AEVQEAAAAAAAAAAAA8AyhuAAEIgTa0AAAAAElFTkSuQmCC" x="0" y="0" transform="translate(10.05,39)"></image>
+      <image width="85" height="19" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAATCAYAAADh9EErAAAAHUlEQVR42u3BgQAAAADDoPlT3+AEVQEAAAAAAHAMGU8AAdc1oXEAAAAASUVORK5CYII=" x="0" y="0" transform="translate(18,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(18,10)">
+      <tspan x="38.65" y="19.99999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">7</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="36" transform="translate(10.05,39)">
+      <tspan x="2.65" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Processes</tspan>
+      <tspan x="2.65" y="30.649999713897706" style="font-family:Arial;font-size:12px;fill:#000000;">Payment</tspan>
+    </text>
+  </g>
+  <g id="Connector-i0k5gxai-ko49" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 981.2000000000002 1415 L 981.2000000000002 1560 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(981.2,1560) rotate(180)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="134.65" height="18.65" transform="translate(911.85,1465.75)"></rect>
+    <text x="0" y="0" width="138.6" height="22.65" transform="translate(911.85,1465.75)">
+      <tspan x="8" y="17.366666316986084" style="font-family:Arial;font-size:12px;fill:#000000;">Payment Method Button</tspan>
+    </text>
+  </g>
+  <g id="Connector-i0k5gxai-ko50" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1041.2 1630 L 1216.2 1630 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1216.2,1630) rotate(90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="93.35" height="18.65" transform="translate(1075.05,1618.15)"></rect>
+    <text x="0" y="0" width="97.3" height="22.65" transform="translate(1075.05,1618.15)">
+      <tspan x="8" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Payment Details</tspan>
+    </text>
+  </g>
+  <g id="Entity-i0k5gxai-ko51" transform="translate(2300,465)">
+    <desc>root/dfd/entity?version=3&amp;author=Cinergix</desc>
+    <g id="image">
+      <rect vector-effect="non-scaling-stroke" fill="#ffffff" stroke="#000000" width="101" height="101" style="fill:#ffffff;stroke-width:1;stroke:#000000;" stroke-width="1"></rect>
+    </g>
+    <text x="0" y="0" width="65" height="20" transform="translate(18,39.5)">
+      <tspan x="5.35" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Customer</tspan>
+    </text>
+  </g>
+  <g id="Process-i0k5gxai-ko52" transform="translate(2290,655)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="121" height="141" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 39 L 121 39 M 1 116 L 121 116 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85.70833333333333" height="75" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABLCAYAAADqHnCyAAAAMElEQVR42u3BMQEAAADCoPVPbQlPoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABuBmUTAAHkmAXiAAAAAElFTkSuQmCC" x="0" y="0" transform="translate(10.05,39)"></image>
+      <image width="85" height="19" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAATCAYAAADh9EErAAAAHUlEQVR42u3BgQAAAADDoPlT3+AEVQEAAAAAAHAMGU8AAdc1oXEAAAAASUVORK5CYII=" x="0" y="0" transform="translate(18,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(18,10)">
+      <tspan x="38.7" y="18.64999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">0</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="84" transform="translate(10.05,39)">
+      <tspan x="2.7" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Processes</tspan>
+      <tspan x="2.7" y="30.649999713897706" style="font-family:Arial;font-size:12px;fill:#000000;">through POS</tspan>
+      <tspan x="2.7" y="46.64999971389771" style="font-family:Arial;font-size:12px;fill:#000000;">Self-Service</tspan>
+      <tspan x="2.7" y="62.64999971389771" style="font-family:Arial;font-size:12px;fill:#000000;">Checkout</tspan>
+      <tspan x="2.7" y="78.6499997138977" style="font-family:Arial;font-size:12px;fill:#000000;">System</tspan>
+    </text>
+  </g>
+  <g id="Entity-i0k5gxai-ko53" transform="translate(2300,875)">
+    <desc>root/dfd/entity?version=3&amp;author=Cinergix</desc>
+    <g id="image">
+      <rect vector-effect="non-scaling-stroke" fill="#ffffff" stroke="#000000" width="101" height="101" style="fill:#ffffff;stroke-width:1;stroke:#000000;" stroke-width="1"></rect>
+    </g>
+    <text x="0" y="0" width="52" height="20" transform="translate(24.5,39.5)">
+      <tspan x="5.35" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Receipt</tspan>
+    </text>
+  </g>
+  <g id="Connector-i0k5gxai-ko54" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 2355 655 L 2355 745 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(2355,745) rotate(180)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="74.65" height="18.65" transform="translate(2315.65,676.6)"></rect>
+    <text x="0" y="0" width="78.6" height="22.65" transform="translate(2315.65,676.6)">
+      <tspan x="8" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Grocery Item</tspan>
+    </text>
+  </g>
+  <g id="Connector-i0k5gxai-ko55" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 2355 885 L 2355 965 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(2355,965) rotate(180)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="76" height="18.65" transform="translate(2315,903.7)"></rect>
+    <text x="0" y="0" width="80" height="22.65" transform="translate(2315,903.7)">
+      <tspan x="8" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Grocery Total</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko17" transform="translate(310.4,5)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="121.00082218647003" height="141" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 40 L 121.00082218647003 40 M 1 116 L 121.00082218647003 116 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85.70891571541627" height="30.6" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAfCAYAAAB9ATpTAAAAIUlEQVR42u3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAA4GCnHAAFTOcU1AAAAAElFTkSuQmCC" x="0" y="0" transform="translate(10.05,40)"></image>
+      <image width="85" height="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAUCAYAAAD88XGTAAAAHUlEQVR42u3BMQEAAADCoPVPbQsvoAAAAAAAAOBrGqQAAY/ieY4AAAAASUVORK5CYII=" x="0" y="0" transform="translate(18,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(18,10)">
+      <tspan x="32" y="18.69999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">1.1</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="36" transform="translate(10.05,40)">
+      <tspan x="2.7" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Lookup</tspan>
+      <tspan x="2.7" y="30.649999713897706" style="font-family:Arial;font-size:12px;fill:#000000;">Scanned Item</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko20" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 119.68888888888898 162.83333333333337 L 315.4 165 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(315.4,165) rotate(90.63428071947317)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="130.65" height="18.65" transform="translate(142.75,151)"></rect>
+    <text x="0" y="0" width="134.6" height="22.65" transform="translate(142.75,151)">
+      <tspan x="6.7" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Barcoded Grocery Item</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko21" transform="translate(580.4,55)">
+    <desc>root/dfd/dataStore2?version=1&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="0" y="0" width="30" height="40.000271797180176" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <rect x="31" y="6" width="171.0013725757599" height="31.00027859210968" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-opacity="0" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 30 5 L 202.0013725757599 5 M 30 36.00027859210968 L 202.0013725757599 36.00027859210968 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+    </g>
+    <text x="0" y="0" width="30" height="20" transform="translate(2,10)">
+      <tspan x="2.65" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">A01</tspan>
+    </text>
+    <text x="0" y="0" width="86.6" height="20" transform="translate(56.7,10)">
+      <tspan x="18.7" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Item Database</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko22" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 435.3999999999999 165 L 585.4000000000001 165 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(585.4,165) rotate(90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="58.65" height="18.65" transform="translate(470,153.15)"></rect>
+    <text x="0" y="0" width="62.6" height="22.65" transform="translate(470,153.15)">
+      <tspan x="6.7" y="17.366666316986084" style="font-family:Arial;font-size:12px;fill:#000000;">Item Code</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko24" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 685.4000000000001 185 L 684.6888888888892 279.388888888889 L 684.6888888888892 279.388888888889 L 684.6888888888892 297.83333333333337 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(684.65,297.8) rotate(180)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="101.35" height="18.65" transform="translate(632,199.05)"></rect>
+    <text x="0" y="0" width="105.3" height="22.65" transform="translate(632,199.05)">
+      <tspan x="6.65" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Item Price Record</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko26" transform="translate(1125.8,20)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="121" height="141" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 40 L 121 40 M 1 116 L 121 116 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85.70833333333333" height="30.6" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAfCAYAAAB9ATpTAAAAIUlEQVR42u3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAA4GCnHAAFTOcU1AAAAAElFTkSuQmCC" x="0" y="0" transform="translate(10.05,40)"></image>
+      <image width="85" height="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAUCAYAAAD88XGTAAAAHUlEQVR42u3BMQEAAADCoPVPbQsvoAAAAAAAAOBrGqQAAY/ieY4AAAAASUVORK5CYII=" x="0" y="0" transform="translate(18,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(18,10)">
+      <tspan x="32" y="18.64999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">1.2</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="36" transform="translate(10.05,40)">
+      <tspan x="2.7" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Lookup Item</tspan>
+      <tspan x="2.7" y="30.649999713897706" style="font-family:Arial;font-size:12px;fill:#000000;">Tag Number</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko25" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 934.2888888888889 178.83333333333337 L 1130.8 180 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1130.8,180) rotate(90.34015527355943)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="132" height="18.65" transform="translate(957.2,167)"></rect>
+    <text x="0" y="0" width="136" height="22.65" transform="translate(957.2,167)">
+      <tspan x="6.65" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Store Tag Grocery Item</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko29" transform="translate(1395.8,70)">
+    <desc>root/dfd/dataStore2?version=1&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="0" y="0" width="30" height="40.000271797180176" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <rect x="31" y="6" width="171.0013725757599" height="31.00027859210968" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-opacity="0" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 30 5 L 202.0013725757599 5 M 30 36.00027859210968 L 202.0013725757599 36.00027859210968 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+    </g>
+    <text x="0" y="0" width="30" height="20" transform="translate(2,10)">
+      <tspan x="2.65" y="15.999999713897706" style="font-family:Arial;font-size:12px;fill:#000000;">A01</tspan>
+    </text>
+    <text x="0" y="0" width="86.6" height="20" transform="translate(56.7,10)">
+      <tspan x="18.7" y="15.999999713897706" style="font-family:Arial;font-size:12px;fill:#000000;">Item Database</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko27" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1250.8 180 L 1400.8 180 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1400.8,180) rotate(90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="58.65" height="18.65" transform="translate(1285.4,168.15)"></rect>
+    <text x="0" y="0" width="62.6" height="22.65" transform="translate(1285.4,168.15)">
+      <tspan x="6.65" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Item Code</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko28" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1500.8 200 L 1499.2888888888892 295.388888888889 L 1499.2888888888892 295.388888888889 L 1499.2888888888892 313.83333333333337 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1499.25,313.8) rotate(180)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="101.35" height="18.65" transform="translate(1446.6,213.25)"></rect>
+    <text x="0" y="0" width="105.3" height="22.65" transform="translate(1446.6,213.25)">
+      <tspan x="6.7" y="17.366666316986084" style="font-family:Arial;font-size:12px;fill:#000000;">Item Price Record</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko35" transform="translate(1886.35,30)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="121" height="141" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 40 L 121 40 M 1 116 L 121 116 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85.70833333333333" height="30.6" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAfCAYAAAB9ATpTAAAAIUlEQVR42u3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAA4GCnHAAFTOcU1AAAAAElFTkSuQmCC" x="0" y="0" transform="translate(10.05,40)"></image>
+      <image width="85" height="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAUCAYAAAD88XGTAAAAHUlEQVR42u3BMQEAAADCoPVPbQsvoAAAAAAAAOBrGqQAAY/ieY4AAAAASUVORK5CYII=" x="0" y="0" transform="translate(18,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(18,10)">
+      <tspan x="32" y="19.99999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">1.3</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="36" transform="translate(10,40)">
+      <tspan x="2.7" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Lookup Item</tspan>
+      <tspan x="2.7" y="30.649999713897706" style="font-family:Arial;font-size:12px;fill:#000000;">Code</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko36" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1693.4888888888888 187.83333333333337 L 1891.3499999999997 190 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1891.3,190) rotate(90.62738904715097)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="130.65" height="18.65" transform="translate(1717.1,176)"></rect>
+    <text x="0" y="0" width="134.6" height="22.65" transform="translate(1717.1,176)">
+      <tspan x="6.65" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Weighted Grocery Item</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko34" transform="translate(2156.35,80)">
+    <desc>root/dfd/dataStore2?version=1&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="0" y="0" width="30" height="40.000271797180176" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <rect x="31" y="6" width="171.0013725757599" height="31.00027859210968" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-opacity="0" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 30 5 L 202.0013725757599 5 M 30 36.00027859210968 L 202.0013725757599 36.00027859210968 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+    </g>
+    <text x="0" y="0" width="30" height="20" transform="translate(2,10)">
+      <tspan x="4" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">A01</tspan>
+    </text>
+    <text x="0" y="0" width="86.6" height="20" transform="translate(56.7,10)">
+      <tspan x="18.7" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Item Database</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko33" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 2015.0500000000002 415 L 2088.7256801486014 415 L 2088.7256801486014 190 L 2161.3999999999996 190 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(2161.35,190) rotate(90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="113.35" height="18.65" transform="translate(2030.05,326.55)"></rect>
+    <text x="0" y="0" width="117.3" height="22.65" transform="translate(2030.05,326.55)">
+      <tspan x="6.7" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Item Code &amp; Weight</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko32" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 2261.3999999999996 210 L 2258.488888888889 304.388888888889 L 2258.488888888889 304.388888888889 L 2258.488888888889 322.83333333333337 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(2258.45,322.8) rotate(180)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="101.35" height="18.65" transform="translate(2205.8,221.85)"></rect>
+    <text x="0" y="0" width="105.3" height="22.65" transform="translate(2205.8,221.85)">
+      <tspan x="6.7" y="17.366666316986084" style="font-family:Arial;font-size:12px;fill:#000000;">Item Price Record</tspan>
+    </text>
+  </g>
+  <g id="Process-i147vbnr-ko47" transform="translate(1885.05,255)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="126.00136029720306" height="141" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 40 L 126.00136029720306 40 M 1 116 L 126.00136029720306 116 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="89.25096354385218" height="30.6" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAAAfCAYAAABnPdrdAAAAIklEQVR42u3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAACAswErtwABhRFqRwAAAABJRU5ErkJggg==" x="0" y="0" transform="translate(10.5,40)"></image>
+      <image width="85" height="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAUCAYAAAD88XGTAAAAHUlEQVR42u3BMQEAAADCoPVPbQsvoAAAAAAAAOBrGqQAAY/ieY4AAAAASUVORK5CYII=" x="0" y="0" transform="translate(20.5,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(20.5,10)">
+      <tspan x="32" y="18.64999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">1.4</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="36" transform="translate(10.5,40)">
+      <tspan x="2.65" y="14.699999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Places Item</tspan>
+      <tspan x="2.65" y="30.699999713897704" style="font-family:Arial;font-size:12px;fill:#000000;">on Scale</tspan>
+    </text>
+  </g>
+  <g id="Connector-i147vbnr-ko48" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1951.3499999999997 260 L 1951.3499999999997 303 L 1955.0500000000002 303 L 1955.0500000000002 345 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1955.05,345) rotate(180)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="130.65" height="18.65" transform="translate(1884,283.05)"></rect>
+    <text x="0" y="0" width="134.6" height="22.65" transform="translate(1884,283.05)">
+      <tspan x="6.65" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Weighted Grocery Item</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko53" transform="translate(199.45,1930)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="121" height="141" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 39 L 121 39 M 1 116 L 121 116 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85.70833333333333" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAwCAYAAACL+42wAAAAJ0lEQVR42u3BMQEAAADCoPVPbQZ/oAAAAAAAAAAAAAAAAAAAAAA+A0CwAAHcKmQcAAAAAElFTkSuQmCC" x="0" y="0" transform="translate(10.05,39)"></image>
+      <image width="85" height="19" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAATCAYAAADh9EErAAAAHUlEQVR42u3BgQAAAADDoPlT3+AEVQEAAAAAAHAMGU8AAdc1oXEAAAAASUVORK5CYII=" x="0" y="0" transform="translate(18,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(18,10)">
+      <tspan x="32" y="18.64999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">7.1</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="52" transform="translate(10.05,39)">
+      <tspan x="2.65" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Processes</tspan>
+      <tspan x="2.65" y="30.649999713897706" style="font-family:Arial;font-size:12px;fill:#000000;">swipe and</tspan>
+      <tspan x="2.65" y="46.64999971389771" style="font-family:Arial;font-size:12px;fill:#000000;">signed panel.</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko59" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 265 1895 L 264.48571428571427 2020.0000000000002 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(264.45,2020) rotate(-179.76427012294826)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="202.65" height="18.65" transform="translate(161.15,1937.4)"></rect>
+    <text x="0" y="0" width="206.6" height="22.65" transform="translate(161.15,1937.4)">
+      <tspan x="5.35" y="17.366666316986084" style="font-family:Arial;font-size:12px;fill:#000000;">Credit Card Payment Method Button</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko60" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 324.48571428571427 2090 L 530 2090 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(530,2090) rotate(90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="93.35" height="16" transform="translate(370.45,2079.5)"></rect>
+    <text x="0" y="0" width="97.3" height="20" transform="translate(370.45,2079.5)">
+      <tspan x="5.35" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Payment Details</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko61" transform="translate(641.9,1830)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="121" height="141" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 39 L 121 39 M 1 116 L 121 116 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85.70833333333333" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAwCAYAAACL+42wAAAAJ0lEQVR42u3BMQEAAADCoPVPbQZ/oAAAAAAAAAAAAAAAAAAAAAA+A0CwAAHcKmQcAAAAAElFTkSuQmCC" x="0" y="0" transform="translate(10.05,39)"></image>
+      <image width="85" height="19" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAATCAYAAADh9EErAAAAHUlEQVR42u3BgQAAAADDoPlT3+AEVQEAAAAAAHAMGU8AAdc1oXEAAAAASUVORK5CYII=" x="0" y="0" transform="translate(18,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(18,10)">
+      <tspan x="32" y="19.99999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">7.2</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="52" transform="translate(10,39)">
+      <tspan x="2.7" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Processes</tspan>
+      <tspan x="2.7" y="30.649999713897706" style="font-family:Arial;font-size:12px;fill:#000000;">swipe and</tspan>
+      <tspan x="2.7" y="46.64999971389771" style="font-family:Arial;font-size:12px;fill:#000000;">entered PIN.</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko62" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 708.6 1827.3333333333348 L 706.9 1920 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(706.9,1920) rotate(-178.94900826933142)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="198.65" height="18.65" transform="translate(605.55,1855.85)"></rect>
+    <text x="0" y="0" width="202.6" height="22.65" transform="translate(605.55,1855.85)">
+      <tspan x="5.35" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Debit Card Payment Method Button</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko63" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 770 2420 L 945 2420 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(945,2420) rotate(90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="93.35" height="16" transform="translate(803.85,2409.5)"></rect>
+    <text x="0" y="0" width="97.3" height="20" transform="translate(803.85,2409.5)">
+      <tspan x="5.3" y="14.699999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Payment Details</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko65" transform="translate(1033.75,1930)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="121" height="141" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 39 L 121 39 M 1 116 L 121 116 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85.70833333333333" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAwCAYAAACL+42wAAAAJ0lEQVR42u3BMQEAAADCoPVPbQZ/oAAAAAAAAAAAAAAAAAAAAAA+A0CwAAHcKmQcAAAAAElFTkSuQmCC" x="0" y="0" transform="translate(10.05,39)"></image>
+      <image width="85" height="19" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAATCAYAAADh9EErAAAAHUlEQVR42u3BgQAAAADDoPlT3+AEVQEAAAAAAHAMGU8AAdc1oXEAAAAASUVORK5CYII=" x="0" y="0" transform="translate(18,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(18,10)">
+      <tspan x="32" y="18.64999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">7.3</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="52" transform="translate(10.05,39)">
+      <tspan x="2.7" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Asks for</tspan>
+      <tspan x="2.7" y="30.649999713897706" style="font-family:Arial;font-size:12px;fill:#000000;">Cash and</tspan>
+      <tspan x="2.7" y="46.64999971389771" style="font-family:Arial;font-size:12px;fill:#000000;">Change</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko66" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1100.5333333333335 1896 L 1098.7833333333333 2020 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1098.75,2020) rotate(-179.19144388676227)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="168" height="18.65" transform="translate(1012.75,1936.75)"></rect>
+    <text x="0" y="0" width="172" height="22.65" transform="translate(1012.75,1936.75)">
+      <tspan x="5.35" y="17.366666316986084" style="font-family:Arial;font-size:12px;fill:#000000;">Cash Payment Method Button</tspan>
+    </text>
+  </g>
+  <g id="i147vbnr-ko67" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1160 2330 L 1330 2330 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1330,2330) rotate(90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="93.35" height="16" transform="translate(1191.9,2319.5)"></rect>
+    <text x="0" y="0" width="97.3" height="20" transform="translate(1191.9,2319.5)">
+      <tspan x="5.3" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Payment Details</tspan>
+    </text>
+  </g>
+  <g id="Process-i147vbnr-ko69" transform="translate(643.15,2040)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="120" height="140" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 39 L 120 39 M 1 115 L 120 115 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAwCAYAAABgzDazAAAAJ0lEQVR42u3BMQEAAADCoPVPbQsvoAAAAAAAAAAAAAAAAAAAAIC3AT/wAAF/D2leAAAAAElFTkSuQmCC" x="0" y="0" transform="translate(10,39)"></image>
+      <image width="85" height="19" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAATCAYAAADh9EErAAAAHUlEQVR42u3BgQAAAADDoPlT3+AEVQEAAAAAAHAMGU8AAdc1oXEAAAAASUVORK5CYII=" x="0" y="0" transform="translate(17.5,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(17.55,10)">
+      <tspan x="28" y="18.64999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">7.21</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="52" transform="translate(10,39)">
+      <tspan x="2.65" y="14.699999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Asks if</tspan>
+      <tspan x="2.65" y="30.699999713897704" style="font-family:Arial;font-size:12px;fill:#000000;">Cashback</tspan>
+      <tspan x="2.65" y="46.69999971389771" style="font-family:Arial;font-size:12px;fill:#000000;">Needed.</tspan>
+    </text>
+  </g>
+  <g id="Connector-i147vbnr-ko70" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 706.9 2060 L 706.9 2095.5 L 708.1999999999999 2095.5 L 708.1999999999999 2130 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(708.15,2130) rotate(180)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="54.65" height="18.65" transform="translate(677.55,2081.95)"></rect>
+    <text x="0" y="0" width="58.6" height="22.65" transform="translate(677.55,2081.95)">
+      <tspan x="5.35" y="17.366666316986084" style="font-family:Arial;font-size:12px;fill:#000000;">PIN Code</tspan>
+    </text>
+  </g>
+  <g id="Process-i147vbnr-ko72" transform="translate(645,2260)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="120" height="140" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 39 L 120 39 M 1 115 L 120 115 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85" height="32" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAgCAYAAABjGjQoAAAAIUlEQVR42u3BMQEAAADCoPVPbQlPoAAAAAAAAAAAAADgZyqgAAEjX//gAAAAAElFTkSuQmCC" x="0" y="0" transform="translate(10,39)"></image>
+      <image width="85" height="19" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAATCAYAAADh9EErAAAAHUlEQVR42u3BgQAAAADDoPlT3+AEVQEAAAAAAHAMGU8AAdc1oXEAAAAASUVORK5CYII=" x="0" y="0" transform="translate(17.5,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(17.45,10)">
+      <tspan x="28" y="18.64999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">7.22</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="36" transform="translate(10,39)">
+      <tspan x="2.65" y="14.699999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Calculates</tspan>
+      <tspan x="2.65" y="30.699999713897704" style="font-family:Arial;font-size:12px;fill:#000000;">Total</tspan>
+    </text>
+  </g>
+  <g id="Connector-i147vbnr-ko73" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 708.1999999999999 2270 L 708.1999999999999 2310.5 L 710 2310.5 L 710 2350 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(710,2350) rotate(180)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="102.65" height="18.65" transform="translate(654.85,2290.4)"></rect>
+    <text x="0" y="0" width="106.6" height="22.65" transform="translate(654.85,2290.4)">
+      <tspan x="6.65" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Cashback Amount</tspan>
+    </text>
+  </g>
+  <g id="Process-i147vbnr-ko74" transform="translate(1035,2170)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="120" height="140" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 39 L 120 39 M 1 115 L 120 115 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85" height="32" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAgCAYAAABjGjQoAAAAIUlEQVR42u3BMQEAAADCoPVPbQlPoAAAAAAAAAAAAADgZyqgAAEjX//gAAAAAElFTkSuQmCC" x="0" y="0" transform="translate(10,39)"></image>
+      <image width="85" height="19" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAATCAYAAADh9EErAAAAHUlEQVR42u3BgQAAAADDoPlT3+AEVQEAAAAAAHAMGU8AAdc1oXEAAAAASUVORK5CYII=" x="0" y="0" transform="translate(17.5,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(17.5,10)">
+      <tspan x="28" y="18.64999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">7.31</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="36" transform="translate(10,39)">
+      <tspan x="2.65" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Calculates</tspan>
+      <tspan x="2.65" y="30.649999713897706" style="font-family:Arial;font-size:12px;fill:#000000;">Total</tspan>
+    </text>
+  </g>
+  <g id="Connector-i147vbnr-ko75" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1098.7833333333333 2160 L 1098.7833333333333 2210.5 L 1100 2210.5 L 1100 2260 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1100,2260) rotate(180)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="130.65" height="18.65" transform="translate(1031.45,2189.25)"></rect>
+    <text x="0" y="0" width="134.6" height="22.65" transform="translate(1031.45,2189.25)">
+      <tspan x="5.3" y="17.366666316986084" style="font-family:Arial;font-size:12px;fill:#000000;">Cash and Change Total</tspan>
+    </text>
+  </g>
+  <g id="Entity-i147vbnr-ko77" transform="translate(20,600)">
+    <desc>root/dfd/entity?version=3&amp;author=Cinergix</desc>
+    <g id="image">
+      <rect vector-effect="non-scaling-stroke" fill="#ffffff" stroke="#000000" width="101" height="101" style="fill:#ffffff;stroke-width:1;stroke:#000000;" stroke-width="1"></rect>
+    </g>
+    <text x="0" y="0" width="56.65" height="22.65" transform="translate(22.15,38.65)">
+      <tspan x="5.35" y="17.366666316986084" style="font-family:Arial;font-size:12px;fill:#000000;">Manager</tspan>
+    </text>
+  </g>
+  <g id="Process-i147vbnr-ko78" transform="translate(10,800)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="120" height="140" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 39 L 120 39 M 1 115 L 120 115 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAwCAYAAABgzDazAAAAJ0lEQVR42u3BMQEAAADCoPVPbQsvoAAAAAAAAAAAAAAAAAAAAIC3AT/wAAF/D2leAAAAAElFTkSuQmCC" x="0" y="0" transform="translate(10,39)"></image>
+      <image width="85" height="19" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAATCAYAAADh9EErAAAAHUlEQVR42u3BgQAAAADDoPlT3+AEVQEAAAAAAHAMGU8AAdc1oXEAAAAASUVORK5CYII=" x="0" y="0" transform="translate(17.5,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(17.45,10)">
+      <tspan x="38.65" y="18.64999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">9</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="52" transform="translate(10,39)">
+      <tspan x="2.7" y="14.699999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Requests</tspan>
+      <tspan x="2.7" y="30.699999713897704" style="font-family:Arial;font-size:12px;fill:#000000;">Report</tspan>
+      <tspan x="2.7" y="46.69999971389771" style="font-family:Arial;font-size:12px;fill:#000000;">Statistics</tspan>
+    </text>
+  </g>
+  <g id="Connector-i147vbnr-ko79" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 75 790 L 75 890 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(75,890) rotate(180)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="106.65" height="18.65" transform="translate(19.65,830.5)"></rect>
+    <text x="0" y="0" width="110.6" height="22.65" transform="translate(19.65,830.5)">
+      <tspan x="6.65" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">POS Report Button</tspan>
+    </text>
+  </g>
+  <g id="Entity-i147vbnr-ko80" transform="translate(305.8,1205)">
+    <desc>root/dfd/entity?version=3&amp;author=Cinergix</desc>
+    <g id="image">
+      <rect vector-effect="non-scaling-stroke" fill="#ffffff" stroke="#000000" width="101" height="101" style="fill:#ffffff;stroke-width:1;stroke:#000000;" stroke-width="1"></rect>
+    </g>
+    <text x="0" y="0" width="84.65" height="22.65" transform="translate(8.15,38.65)">
+      <tspan x="5.35" y="17.366666316986084" style="font-family:Arial;font-size:12px;fill:#000000;">POS Machine</tspan>
+    </text>
+  </g>
+  <g id="Process-i147vbnr-ko81" transform="translate(295.8,1400)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="120" height="140" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 39 L 120 39 M 1 115 L 120 115 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAwCAYAAABgzDazAAAAJ0lEQVR42u3BMQEAAADCoPVPbQsvoAAAAAAAAAAAAAAAAAAAAIC3AT/wAAF/D2leAAAAAElFTkSuQmCC" x="0" y="0" transform="translate(10,39)"></image>
+      <image width="85" height="19" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAATCAYAAADh9EErAAAAHUlEQVR42u3BgQAAAADDoPlT3+AEVQEAAAAAAHAMGU8AAdc1oXEAAAAASUVORK5CYII=" x="0" y="0" transform="translate(17.5,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(17.5,10)">
+      <tspan x="38.65" y="18.64999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">8</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="52" transform="translate(10,39)">
+      <tspan x="2.65" y="14.699999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Calculates</tspan>
+      <tspan x="2.65" y="30.699999713897704" style="font-family:Arial;font-size:12px;fill:#000000;">remaining</tspan>
+      <tspan x="2.65" y="46.69999971389771" style="font-family:Arial;font-size:12px;fill:#000000;">Cash/Change</tspan>
+    </text>
+  </g>
+  <g id="Connector-i147vbnr-ko82" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 360.8333333333333 1395 L 360.8333333333333 1490 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(360.8,1490) rotate(180)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="146.65" height="18.65" transform="translate(285.5,1428.6)"></rect>
+    <text x="0" y="0" width="150.6" height="22.65" transform="translate(285.5,1428.6)">
+      <tspan x="4" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Currency Progress Report</tspan>
+    </text>
+  </g>
+  <g id="Entity-i147vbnr-ko83" transform="translate(555.75,1420)">
+    <desc>root/dfd/entity?version=3&amp;author=Cinergix</desc>
+    <g id="image">
+      <rect vector-effect="non-scaling-stroke" fill="#ffffff" stroke="#000000" width="101" height="101" style="fill:#ffffff;stroke-width:1;stroke:#000000;" stroke-width="1"></rect>
+    </g>
+    <text x="0" y="0" width="52.65" height="22.65" transform="translate(24.15,38.65)">
+      <tspan x="5.35" y="18.666666316986085" style="font-family:Arial;font-size:12px;fill:#000000;">Cashier</tspan>
+    </text>
+  </g>
+  <g id="Connector-i147vbnr-ko84" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 420.8333333333333 1560 L 560.7833333333333 1560 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(560.75,1560) rotate(90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="97.35" height="18.65" transform="translate(438.55,1548.15)"></rect>
+    <text x="0" y="0" width="101.3" height="22.65" transform="translate(438.55,1548.15)">
+      <tspan x="4" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Low Change Alert</tspan>
+    </text>
+  </g>
+  <g id="Entity-i147vbnr-ko86" transform="translate(305,1620)">
+    <desc>root/dfd/entity?version=3&amp;author=Cinergix</desc>
+    <g id="image">
+      <rect vector-effect="non-scaling-stroke" fill="#ffffff" stroke="#000000" width="101" height="101" style="fill:#ffffff;stroke-width:1;stroke:#000000;" stroke-width="1"></rect>
+    </g>
+    <text x="0" y="0" width="82" height="38.65" transform="translate(9.5,30.65)">
+      <tspan x="5.3" y="18.666666316986085" style="font-family:Arial;font-size:12px;fill:#000000;">Regular POS</tspan>
+      <tspan x="20" y="37.31666631698608" style="font-family:Arial;font-size:12px;fill:#000000;">Display</tspan>
+    </text>
+  </g>
+  <g id="Connector-i147vbnr-ko87" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 360.8333333333333 1630 L 360.8333333333333 1670.5 L 360.0333333333333 1670.5 L 360.0333333333333 1710 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(360,1710) rotate(180)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="130.65" height="18.65" transform="translate(293.5,1658.15)"></rect>
+    <text x="0" y="0" width="134.6" height="22.65" transform="translate(293.5,1658.15)">
+      <tspan x="4" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Sufficient Change Alert</tspan>
+    </text>
+  </g>
+  <g id="Data Store 2-i147vbnr-ko89" transform="translate(280,850)">
+    <desc>root/dfd/dataStore2?version=1&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="0" y="0" width="30" height="40" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <rect x="31" y="6" width="170" height="31" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-opacity="0" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 30 5 L 201 5 M 30 36 L 201 36 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+    </g>
+    <text x="0" y="0" width="30" height="22.65" transform="translate(2,10)">
+      <tspan x="2.65" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">A03</tspan>
+    </text>
+    <text x="0" y="0" width="120" height="20" transform="translate(40,10)">
+      <tspan x="2.7" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">POS Database</tspan>
+    </text>
+  </g>
+  <g id="Connector-i147vbnr-ko90" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 135 960 L 285 960 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(285,960) rotate(90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="88" height="18.65" transform="translate(160.45,948.15)"></rect>
+    <text x="0" y="0" width="92" height="22.65" transform="translate(160.45,948.15)">
+      <tspan x="4" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Report Request</tspan>
+    </text>
+  </g>
+  <g id="Process-i147vbnr-ko91" transform="translate(320,990)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="120" height="140" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 39 L 120 39 M 1 115 L 120 115 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85" height="32" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAgCAYAAABjGjQoAAAAIUlEQVR42u3BMQEAAADCoPVPbQlPoAAAAAAAAAAAAADgZyqgAAEjX//gAAAAAElFTkSuQmCC" x="0" y="0" transform="translate(10,39)"></image>
+      <image width="85" height="19" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAATCAYAAADh9EErAAAAHUlEQVR42u3BgQAAAADDoPlT3+AEVQEAAAAAAHAMGU8AAdc1oXEAAAAASUVORK5CYII=" x="0" y="0" transform="translate(17.5,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(17.45,10)">
+      <tspan x="34.65" y="19.99999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">10</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="36" transform="translate(10,39)">
+      <tspan x="2.65" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Creates</tspan>
+      <tspan x="2.65" y="30.649999713897706" style="font-family:Arial;font-size:12px;fill:#000000;">Report</tspan>
+    </text>
+  </g>
+  <g id="Connector-i147vbnr-ko92" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 385 980 L 385 1080 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(385,1080) rotate(180)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="68" height="18.65" transform="translate(349,1010.3)"></rect>
+    <text x="0" y="0" width="72" height="22.65" transform="translate(349,1010.3)">
+      <tspan x="4" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Report Data</tspan>
+    </text>
+  </g>
+  <g id="Entity-i147vbnr-ko93" transform="translate(25,1010)">
+    <desc>root/dfd/entity?version=3&amp;author=Cinergix</desc>
+    <g id="image">
+      <rect vector-effect="non-scaling-stroke" fill="#ffffff" stroke="#000000" width="101" height="101" style="fill:#ffffff;stroke-width:1;stroke:#000000;" stroke-width="1"></rect>
+    </g>
+    <text x="0" y="0" width="47.35" height="22.65" transform="translate(26.8,38.65)">
+      <tspan x="5.35" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Report</tspan>
+    </text>
+  </g>
+  <g id="Connector-i147vbnr-ko94" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 325 1150 L 130 1150 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(130,1150) rotate(-90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="68" height="18.65" transform="translate(179.85,1138.15)"></rect>
+    <text x="0" y="0" width="72" height="22.65" transform="translate(179.85,1138.15)">
+      <tspan x="4" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Report Data</tspan>
+    </text>
+  </g>
+  <g id="Data Store 2-i147vbnr-ko96" transform="translate(5,1450)">
+    <desc>root/dfd/dataStore2?version=1&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="0" y="0" width="30" height="40" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <rect x="31" y="6" width="170" height="31" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-opacity="0" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 30 5 L 201 5 M 30 36 L 201 36 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+    </g>
+    <text x="0" y="0" width="30" height="22.65" transform="translate(2,10)">
+      <tspan x="2.65" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">A03</tspan>
+    </text>
+    <text x="0" y="0" width="120" height="20" transform="translate(40,10)">
+      <tspan x="2.65" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">POS Database</tspan>
+    </text>
+  </g>
+  <g id="Connector-i147vbnr-ko97" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 300.8333333333333 1560 L 210 1560 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(210,1560) rotate(-90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="26.65" height="18.65" transform="translate(227.35,1548.15)"></rect>
+    <text x="0" y="0" width="30.6" height="22.65" transform="translate(227.35,1548.15)">
+      <tspan x="4" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Total</tspan>
+    </text>
+  </g>
+  <g id="Data Store 2-i147vbnr-ko98" transform="translate(1900,1605)">
+    <desc>root/dfd/dataStore2?version=1&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="0" y="0" width="30" height="40" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <rect x="31" y="6" width="170" height="31" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-opacity="0" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 30 5 L 201 5 M 30 36 L 201 36 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+    </g>
+    <text x="0" y="0" width="30" height="22.65" transform="translate(2,10)">
+      <tspan x="2.65" y="17.366666316986084" style="font-family:Arial;font-size:12px;fill:#000000;">A03</tspan>
+    </text>
+    <text x="0" y="0" width="120" height="20" transform="translate(40,10)">
+      <tspan x="2.7" y="14.699999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">POS Database</tspan>
+    </text>
+  </g>
+  <g id="Data Store 2-i147vbnr-ko99" transform="translate(1530,1785)">
+    <desc>root/dfd/dataStore2?version=1&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="0" y="0" width="30" height="40" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <rect x="31" y="6" width="170" height="31" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-opacity="0" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 30 5 L 201 5 M 30 36 L 201 36 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+    </g>
+    <text x="0" y="0" width="30" height="22.65" transform="translate(2,10)">
+      <tspan x="2.7" y="17.366666316986084" style="font-family:Arial;font-size:12px;fill:#000000;">A01</tspan>
+    </text>
+    <text x="0" y="0" width="120" height="20" transform="translate(40,10)">
+      <tspan x="2.65" y="14.699999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Item Database</tspan>
+    </text>
+  </g>
+  <g id="Process-i147vbnr-ko100" transform="translate(1940,1735)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="121" height="136.26923650503159" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 39 L 121 39 M 1 111.26923650503159 L 121 111.26923650503159 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85.70833333333333" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABACAYAAACA2YBxAAAALElEQVR42u3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAHg0VkAAAZ1XkbEAAAAASUVORK5CYII=" x="0" y="0" transform="translate(10.05,39)"></image>
+      <image width="85" height="19" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAATCAYAAADh9EErAAAAHUlEQVR42u3BgQAAAADDoPlT3+AEVQEAAAAAAHAMGU8AAdc1oXEAAAAASUVORK5CYII=" x="0" y="0" transform="translate(18,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(18,10)">
+      <tspan x="28" y="18.64999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">10.1</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="68" transform="translate(10.05,39)">
+      <tspan x="2.65" y="14.649999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Requests</tspan>
+      <tspan x="2.65" y="30.649999713897706" style="font-family:Arial;font-size:12px;fill:#000000;">Information</tspan>
+      <tspan x="2.65" y="46.64999971389771" style="font-family:Arial;font-size:12px;fill:#000000;">from</tspan>
+      <tspan x="2.65" y="62.64999971389771" style="font-family:Arial;font-size:12px;fill:#000000;">Databases</tspan>
+    </text>
+  </g>
+  <g id="Connector-i147vbnr-ko101" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1905 1715 L 1696.6000000000004 1715.866666666667 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="fromIcon" transform="translate(1905,1715) rotate(89.76172717856703)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="88" height="18.65" transform="translate(1763.35,1703.15)"></rect>
+    <text x="0" y="0" width="92" height="22.65" transform="translate(1763.35,1703.15)">
+      <tspan x="4" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Report Request</tspan>
+    </text>
+  </g>
+  <g id="Connector-i147vbnr-ko102" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 2005 1735 L 2005 1825 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(2005,1825) rotate(180)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="68" height="18.65" transform="translate(1969,1759.05)"></rect>
+    <text x="0" y="0" width="72" height="22.65" transform="translate(1969,1759.05)">
+      <tspan x="4" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Report Data</tspan>
+    </text>
+  </g>
+  <g id="Connector-i147vbnr-ko103" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1735 1895 L 1945 1895 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="fromIcon" transform="translate(1735,1895) rotate(-90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="133.35" height="18.65" transform="translate(1778.5,1883.15)"></rect>
+    <text x="0" y="0" width="137.3" height="22.65" transform="translate(1778.5,1883.15)">
+      <tspan x="2.7" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Item Database Request</tspan>
+    </text>
+  </g>
+  <g id="Data Store 2-i147vbnr-ko105" transform="translate(2275,1785)">
+    <desc>root/dfd/dataStore2?version=1&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="0" y="0" width="30" height="40" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <rect x="31" y="6" width="170" height="31" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-opacity="0" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 30 5 L 201 5 M 30 36 L 201 36 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+    </g>
+    <text x="0" y="0" width="30" height="22.65" transform="translate(2,10)">
+      <tspan x="2.65" y="17.366666316986084" style="font-family:Arial;font-size:12px;fill:#000000;">A02</tspan>
+    </text>
+    <text x="0" y="0" width="120" height="20" transform="translate(40,10)">
+      <tspan x="2.65" y="14.699999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Coupon Database</tspan>
+    </text>
+  </g>
+  <g id="Connector-i147vbnr-ko110" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 2065 1895 L 2280 1895 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(2280,1895) rotate(90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="150.65" height="18.65" transform="translate(2091.6,1883.15)"></rect>
+    <text x="0" y="0" width="154.6" height="22.65" transform="translate(2091.6,1883.15)">
+      <tspan x="2.65" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Coupon Database Request</tspan>
+    </text>
+  </g>
+  <g id="Process-i147vbnr-ko111" transform="translate(1940,1960)">
+    <desc>root/dfd/process?version=2&amp;author=Cinergix</desc>
+    <g id="image">
+      <g id="graphics">
+        
+        <rect x="1" y="1" width="120" height="140" rx="15" fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></rect>
+        <path d="M 1 39 L 120 39 M 1 115 L 120 115 " fill="#ffffff" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+      </g>
+      <image width="85" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAwCAYAAABgzDazAAAAJ0lEQVR42u3BMQEAAADCoPVPbQsvoAAAAAAAAAAAAAAAAAAAAIC3AT/wAAF/D2leAAAAAElFTkSuQmCC" x="0" y="0" transform="translate(10,39)"></image>
+      <image width="85" height="19" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAATCAYAAADh9EErAAAAHUlEQVR42u3BgQAAAADDoPlT3+AEVQEAAAAAAHAMGU8AAdc1oXEAAAAASUVORK5CYII=" x="0" y="0" transform="translate(17.5,10)"></image>
+    </g>
+    <text x="0" y="0" width="85" height="22.65" transform="translate(17.45,10)">
+      <tspan x="28" y="18.64999961853027" style="font-family:Arial;font-size:14px;fill:#000000;font-weight:bold;">10.2</tspan>
+    </text>
+    <text x="0" y="0" width="85" height="52" transform="translate(10,39)">
+      <tspan x="2.65" y="14.699999713897705" style="font-family:Arial;font-size:12px;fill:#000000;">Compiles</tspan>
+      <tspan x="2.65" y="30.699999713897704" style="font-family:Arial;font-size:12px;fill:#000000;">Data</tspan>
+      <tspan x="2.65" y="46.69999971389771" style="font-family:Arial;font-size:12px;fill:#000000;">Information</tspan>
+    </text>
+  </g>
+  <g id="Connector-i147vbnr-ko112" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 2005 1960 L 2005 2050 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(2005,2050) rotate(180)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+  </g>
+  <g id="Connector-i147vbnr-ko113" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 2005 2190 L 2005 2315 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(2005,2315) rotate(180)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="68" height="18.65" transform="translate(1969,2237.25)"></rect>
+    <text x="0" y="0" width="72" height="22.65" transform="translate(1969,2237.25)">
+      <tspan x="2.65" y="17.366666316986084" style="font-family:Arial;font-size:12px;fill:#000000;">Report Data</tspan>
+    </text>
+  </g>
+  <g id="Connector-i147vbnr-ko114" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 1635 1915 L 1635 2120 L 1945 2120 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(1945,2120) rotate(90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="26.65" height="18.65" transform="translate(1619.65,2012.6)"></rect>
+    <text x="0" y="0" width="30.6" height="22.65" transform="translate(1619.65,2012.6)">
+      <tspan x="2.65" y="17.316666316986083" style="font-family:Arial;font-size:12px;fill:#000000;">Data</tspan>
+    </text>
+  </g>
+  <g id="Connector-i147vbnr-ko115" transform="translate(-5,-90)">
+    <g id="graphics">
+      
+      <path d="M 2380 1915 L 2380 2120 L 2065 2120 " fill="none" stroke="#000000" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"></path>
+    </g>
+    <g id="toIcon" transform="translate(2065,2120) rotate(-90)">
+      <metadata id="metadata3057">
+        <aaa:rdf xmlns:aaa="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></aaa:rdf>
+      </metadata>
+      <defs id="defs3055"></defs>
+      <aaa:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" aab:pageopacity="0" aab:pageshadow="2" aab:window-width="1366" aab:window-height="706" id="namedview3053" showgrid="true" aab:zoom="5.6568543" aab:cx="35.742573" aab:cy="39.38026" aab:window-x="-8" aab:window-y="-8" aab:window-maximized="1" aab:current-layer="Layer_1" xmlns:aaa="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:aab="http://www.inkscape.org/namespaces/inkscape"></aaa:namedview>
+      <polygon points="0,0 8,8 -8,8 " id="polygon3051" transform="translate(0.00390625,0.71874995)" style="fill:#000000;stroke-width:1;stroke:#000000;" stroke="#000000" stroke-width="1" fill="#000000"></polygon>
+    </g>
+    <rect fill="#ffffff" x="0" y="0" width="26.65" height="18.65" transform="translate(2364.65,1992.8)"></rect>
+    <text x="0" y="0" width="30.6" height="22.65" transform="translate(2364.65,1992.8)">
+      <tspan x="2.65" y="17.366666316986084" style="font-family:Arial;font-size:12px;fill:#000000;">Data</tspan>
+    </text>
+  </g>
+</svg></div></svg-view>
+
+            <!---->
+        </div>
+    </div>
+</div></mob-diagram-viewer>
+                <!----></view-stack>
+</div></app-root><script type="text/javascript" src="./inline.1c539edba6bd47419f96.bundle.js.download"></script><script type="text/javascript" src="./polyfills.a5df6df2cf72cdef99d2.bundle.js.download"></script><script type="text/javascript" src="./vendor.16b3a9bdcfab26faeb33.bundle.js.download"></script><script type="text/javascript" src="./main.c7a7b9e7e95688d91fef.bundle.js.download"></script></body></html>
